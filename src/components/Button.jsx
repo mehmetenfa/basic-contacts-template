@@ -14,25 +14,29 @@ import PinterestIcon from "@mui/icons-material/Pinterest";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import GoogleIcon from "@mui/icons-material/Google";
 
-const Button = ({ icon }) => {
+const Button = ({ icon, color, bgColor, }) => {
   return (
-    <button className="border flex items-center justify-center w-10 h-10 rounded-lg bg-navigation">
-      {icon === 'arrowLeft' && <KeyboardArrowLeftIcon className="text-buttonColor" style={{ fontSize: 22 }} />}
-      {icon === 'arrowRight' && <KeyboardArrowRightIcon className="text-buttonColor" style={{ fontSize: 22 }} />}
-      {icon === 'person' && <PersonAddIcon className="text-buttonColor" style={{ fontSize: 22 }} />}
-      {icon === 'search' && <SearchIcon className="text-buttonColor" style={{ fontSize: 22 }} />}
-      {icon === 'question' && <QuestionAnswerIcon className="text-buttonColor" style={{ fontSize: 22 }} />}
-      {icon === 'phone' && <LocalPhoneIcon className="text-buttonColor" style={{ fontSize: 22 }} />}
-      {icon === 'dots' && <MoreHorizIcon className="text-buttonColor" style={{ fontSize: 22 }} />}
-      {icon === 'share' && <IosShareIcon className="text-buttonColor" style={{ fontSize: 22 }} />}
-      {icon === 'facebook' && <FacebookIcon className="text-buttonColor" style={{ fontSize: 22 }} />}
-      {icon === 'linkedin' && <LinkedInIcon className="text-buttonColor" style={{ fontSize: 22 }} />}
-      {icon === 'pinterest' && <PinterestIcon className="text-buttonColor" style={{ fontSize: 22 }} />}
-      {icon === 'twitter' && <TwitterIcon className="text-buttonColor" style={{ fontSize: 22 }} />}
-      {icon === 'google' && <GoogleIcon className="text-buttonColor" style={{ fontSize: 22 }} />}
-      {icon === 'menu' && <MenuIcon className="text-buttonColor" style={{ fontSize: 22 }}/>}
+    <button className={`border flex items-center justify-center w-10 h-10 rounded-lg bg-${bgColor}`}>
+      {icon === 'arrowLeft' && <KeyboardArrowLeftIcon className={`text-${color}`} style={{ fontSize: 22 }} />}
+      {icon === 'arrowRight' && <KeyboardArrowRightIcon className={`text-${color}`} style={{ fontSize: 22 }} />}
+      {icon === 'person' && <PersonAddIcon className={`text-${color}`} style={{ fontSize: 22 }} />}
+      {icon === 'search' && <SearchIcon className={`text-${color}`} style={{ fontSize: 22 }} />}
+      {icon === 'question' && <QuestionAnswerIcon className={`text-${color}`} style={{ fontSize: 22 }} />}
+      {icon === 'phone' && <LocalPhoneIcon className={`text-${color}`} style={{ fontSize: 22 }} />}
+      {icon === 'dots' && <MoreHorizIcon className={`text-${color}`} style={{ fontSize: 22 }} />}
+      {icon === 'share' && <IosShareIcon className={`text-${color}`} style={{ fontSize: 22 }} />}
+      {icon === 'facebook' && <FacebookIcon className={`text-${color}`} style={{ fontSize: 22 }} />}
+      {icon === 'linkedin' && <LinkedInIcon className={`text-${color}`} style={{ fontSize: 22 }} />}
+      {icon === 'pinterest' && <PinterestIcon className={`text-${color}`} style={{ fontSize: 22 }} />}
+      {icon === 'twitter' && <TwitterIcon className={`text-${color}`} style={{ fontSize: 22 }} />}
+      {icon === 'google' && <GoogleIcon className={`text-${color}`} style={{ fontSize: 22 }} />}
+      {icon === 'menu' && <MenuIcon className={`text-${color}`} style={{ fontSize: 22 }}/>}
     </button>
   );
 };
+
+Button.defaultProps = {
+  color: 'buttonColor',
+}
 
 export default Button;

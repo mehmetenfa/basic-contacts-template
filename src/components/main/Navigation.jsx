@@ -21,11 +21,11 @@ const Navigation = () => {
         </div>
         <div className='relative'>
           <QuestionAnswerIcon className='text-buttonColor m-1.5' style={{ fontSize: 22 }} />
-          <span className="w-2 h-2 bg-green-500 rounded-full absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2"></span>
+          <span className="w-2 h-2 bg-dotColor1 rounded-full absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2"></span>
         </div>
         <div className='relative'>
           <LocalPhoneIcon className='text-buttonColor m-1.5' style={{ fontSize: 22 }} />
-          <span className="w-2 h-2 bg-green-500 rounded-full absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2"></span>
+          <span className="w-2 h-2 bg-dotColor1 rounded-full absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2"></span>
         </div>
         <div>
           <DevicesIcon className='text-buttonColor' style={{ fontSize: 22 }} />
@@ -38,7 +38,7 @@ const Navigation = () => {
         </div>
         <div className='relative'>
           <CalendarMonthIcon className='text-buttonColor m-1.5' style={{ fontSize: 22 }} />
-          <span className="w-2 h-2 bg-green-500 rounded-full absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2"></span>
+          <span className="w-2 h-2 bg-dotColor1 rounded-full absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2"></span>
         </div>
         <div>
           <SettingsIcon className='text-buttonColor' style={{ fontSize: 22 }} />
