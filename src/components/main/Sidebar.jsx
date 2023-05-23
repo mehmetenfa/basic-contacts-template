@@ -1,8 +1,11 @@
 import React from 'react'
+import Button from '../Button'
 
 const Sidebar = () => {
   return (
-    <div>Sidebar</div>
+    <div>
+      sidebar
+    </div>
   )
 }
 
