@@ -17,6 +17,9 @@ module.exports = {
         dotColor1: '#28C345',
         dotColor2: '#F6933E',
         dotColor3: '#FF808B',
+        seperator: '#ECEEF5',
+        primary: '#8083A3',
+        primaryButton: '#F3F4F9'
       },
     },
   },
